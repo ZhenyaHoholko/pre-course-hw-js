@@ -8,9 +8,16 @@ let passportMarried = {
 };
 
 let passportMarried2 = JSON.parse(JSON.stringify(passportMarried));
+
 const { address, ...rest } = passportMarried2;
 const { surname, ...restWithoutSurname } = rest;
-passportMarried2 = { surname, ...restWithoutSurname, married: true, address };
+
+passportMarried2 = { 
+    ...restWithoutSurname,
+    surname,
+    married: true,
+    address
+};
 
 console.log(passportMarried);
 console.log(passportMarried2);
