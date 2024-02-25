@@ -12,12 +12,13 @@ let passportMarried2 = JSON.parse(JSON.stringify(passportMarried));
 const { address, ...rest } = passportMarried2;
 const { surname, ...restWithoutSurname } = rest;
 
-passportMarried2 = { 
-    ...restWithoutSurname,
-    surname,
-    married: true,
-    address
-};
+passportMarried2.married=true;
+// passportMarried2 = { 
+//     address,
+//     married: true,
+//     ...restWithoutSurname,
+//     surname
+// };
 
 console.log(passportMarried);
 console.log(passportMarried2);
