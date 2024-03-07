@@ -11,6 +11,7 @@ const users3 = [
         surName: 'Johnson',
         address: '789 Oak St'
     },
+    
     {
         id: 3,
         user: 'Bob',
