@@ -53,7 +53,6 @@ const users = [
         surName: 'Taylor',
         address: '321 Hickory St'
     },
-    
     {
         id: 10,
         user: 'Karen',
